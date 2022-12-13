@@ -8,10 +8,18 @@
 
 需安装这几个依赖包：undici,jsdom,crypto-js,compressing
 
+
 ## 配置项
+
+在"脚本管理"中新增脚本,文件名：manga.js,将脚本复制进去后修改以下项目：
 
 baseUrl: 配置网站地址
 basePath: 配置本地储存路径
+
+在"定时任务"中新建任务
+命令: task manga.js
+定时规则: 0 25 6 * * * (此处为cron表达式,表示每天6点26执行)
+
 
 ## 工作流程
 
